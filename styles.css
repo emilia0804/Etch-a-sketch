@@ -23,14 +23,14 @@
 }
 
 #container{
-    max-width: 900px;
+    max-width: 700px;
     display: flex;
     flex-wrap: wrap; 
     margin: 20px; 
 }
 
 .box {
-    border: 1px solid gray;  
+    border: 1px solid gray;
 }
 
 /* .newBox{

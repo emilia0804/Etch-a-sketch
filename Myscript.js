@@ -16,7 +16,7 @@ createGrid(defaultGrid);
 
 function createGrid(grid){   
     container.innerHTML = "";
-    let boxSize = 900 / grid;
+    let boxSize = 700 / grid;
 
     for(let i=0;i<grid;i++){
     for(let j=0;j<grid;j++){
