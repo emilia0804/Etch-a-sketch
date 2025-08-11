@@ -16,26 +16,25 @@ createGrid(defaultGrid);
 
 function createGrid(grid){   
     container.innerHTML = "";
-    let boxSize = 700 / grid;
 
     for(let i=0;i<grid;i++){
-    for(let j=0;j<grid;j++){
-        let box = document.createElement("div");
-        box.classList.add("box");
-        box.style.width = `${boxSize}px`;
-        box.style.height = `${boxSize}px`;
+        let rowDiv = document.createElement("div");
+        rowDiv.classList.add("rowDiv");
+        for(let j=0;j<grid;j++){
+            let box = document.createElement("div");
+            box.classList.add("box");
       
-        box.addEventListener("mouseover",()=>{
-            // box.classList.add("newBox");
-            let r = Math.floor(Math.random() * 256);
-            let g = Math.floor(Math.random() * 256);
-            let b = Math.floor(Math.random() * 256);
-            box.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-        });
-
-        container.appendChild(box);
+            box.addEventListener("mouseover",()=>{
+                // box.classList.add("newBox");
+                let r = Math.floor(Math.random() * 256);
+                let g = Math.floor(Math.random() * 256);
+                let b = Math.floor(Math.random() * 256);
+                box.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+            });
+        rowDiv.appendChild(box);
+        }
+    container.appendChild(rowDiv);
     }
-}
 }
 
 

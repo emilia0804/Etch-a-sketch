@@ -23,15 +23,22 @@
 }
 
 #container{
-    max-width: 700px;
+    max-width: 900px;
     display: flex;
-    flex-wrap: wrap; 
     margin: 20px; 
+    justify-content: center;
 }
 
 .box {
-    border: 1px solid gray;
+    border: 1px solid rgb(204, 196, 196);
+    min-width: 30px;
+    min-height: 30px;
 }
+
+/* .rowDiv{
+    display: flex;
+    
+} */
 
 /* .newBox{
     background-color: rgb(red, green, blue);
